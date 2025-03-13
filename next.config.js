@@ -22,9 +22,9 @@ const nextConfig = {
 	// cssModules: true,
 
 	// ignore build errors
-	typescript: {
-		ignoreBuildErrors: true
-	}
+	// typescript: {
+	// 	ignoreBuildErrors: true
+	// }, 
 	
 
 

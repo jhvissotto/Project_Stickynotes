@@ -8,7 +8,7 @@ const styles = {
         height: 70px;
         background: linear-gradient(var(--primary-gradient-ini), var(--primary-gradient-end))
     `,
-    text: css`
+    title: css`
         font-family: 'Russo One';
         font-weight: 100;
         font-size: 26px;
@@ -18,14 +18,15 @@ const styles = {
 
 export default function Header({ className, ...props }) {
     return (
-        <header 
+        <header
+            /* @ts-ignore */
             css={styles.container} 
             className={cn('flex jc-center ai-center', className)} 
             {...props} 
         >
-            <Text as="h1" css={styles.text} >
-                STICKY NOTE
-            </Text>
+            {/* @ts-ignore */}
+            <h1 css={styles.title} >STICKY NOTE</h1>
+            {/* <Text as="h1" css={styles.title} >STICKY NOTE</Text> */}
         </header>
     )
 }

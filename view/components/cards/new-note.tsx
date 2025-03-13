@@ -42,22 +42,25 @@ const content = {
     },
 }
 
-
 // component
+// @ts-ignore
 export default function NewNote({ ...props }) {
-
+    
     // render
     return (
         <div 
+            // @ts-ignore
             css={styles.container} 
             className="flex column ai-center jc-center pointer-cascade" 
             title={content.tooltip.en}
             {...props}
-        >
+            >
             {/* ======== ICON ======== */}
+            {/* @ts-ignore */}
             <MdAddCircle id="icon" css={styles.icon} />
             
             {/* ======== SUBTITLE ======== */}
+            {/* @ts-ignore */}
             <p id="subtitle" css={styles.subtitle} >
                 {content.subtitle.en}
             </p>

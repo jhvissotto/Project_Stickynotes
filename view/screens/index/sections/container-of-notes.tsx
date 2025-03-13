@@ -22,9 +22,10 @@ export default function SectionContainerOfNotes({ style }) {
 
     return (
         <section style={style} className="width-max"  >
-            
+            {/* @ts-ignore */}
             <p css={styles.title} className="text-center" >{content.title.en}</p>
 
+            {/* @ts-ignore */}
             <ControllerOfNotes 
                 // style={{ marginTop: -25 }} className="absolute" 
             />

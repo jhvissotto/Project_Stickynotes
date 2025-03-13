@@ -39,18 +39,22 @@ export default class MyDocument extends Document {
 
   // should render on <html>
   get helmetHtmlAttrComponents() {
+    // @ts-ignore
     return this.props.helmet.htmlAttributes.toComponent()
   }
-
+  
   // should render on <body>
   get helmetBodyAttrComponents() {
+    // @ts-ignore
     return this.props.helmet.bodyAttributes.toComponent()
   }
-
+  
   // should render on <head>
   get helmetHeadComponents() {
+    // @ts-ignore
     return Object.keys(this.props.helmet)
-      .filter((el) => el !== 'htmlAttributes' && el !== 'bodyAttributes')
+    .filter((el) => el !== 'htmlAttributes' && el !== 'bodyAttributes')
+    // @ts-ignore
       .map((el) => this.props.helmet[el].toComponent())
   }
 

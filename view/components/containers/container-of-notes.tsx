@@ -40,11 +40,13 @@ export default function ContainerOfNotes({ style }) {
 
     // render
     return (
+        // @ts-ignore
         <ul style={style} css={styles.container} className="width-max flex flex-wrap ac-start" >
             
             {/* ========================== */}
             {/* ======== NEW NOTE ======== */}
             {/* ========================== */}
+            {/* @ts-ignore */}
             <li css={styles.li} >
                 <NewNote onClick={handlers.newNote} />
             </li>
@@ -56,6 +58,7 @@ export default function ContainerOfNotes({ style }) {
                 const { id, text, isFavorite, datetime } = data
                 
                 const render = (
+                    // @ts-ignore
                     <li key={id} css={styles.li}  >
                         <StickyNote data={{ id, text, isFavorite, datetime }} />
                     </li>

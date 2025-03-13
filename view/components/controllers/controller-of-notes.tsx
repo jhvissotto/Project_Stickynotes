@@ -63,11 +63,13 @@ export default function ControllerOfNotes({ style, className }) {
         <div style={style} className={cn(className)} >
             
             <button 
+                // @ts-ignore
                 css={[styles.buttons, styles.btDelAll]} 
                 className="pointer-cascade"
                 onClick={handlers.btDelAll} 
                 title={content.clickForDelete.en}
             >
+                {/* @ts-ignore */}
                 <p css={styles.title} >
                     {content.delAll.en}
                 </p>
@@ -75,11 +77,13 @@ export default function ControllerOfNotes({ style, className }) {
 
             
             <button 
+                // @ts-ignore
                 css={[styles.buttons, styles.btOnlyFav({ showOnlyFav })]} 
                 className="pointer-cascade"
                 onClick={handlers.btOnlyFav} 
                 title={content.clickForToogle.en}
             >
+                {/* @ts-ignore */}
                 <p css={styles.title} >
                     {content.onlyFav.en}
                 </p>

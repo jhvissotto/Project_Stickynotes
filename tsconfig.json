@@ -23,6 +23,7 @@
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "noEmitOnError": false,
+    "noPropertyAccessFromIndexSignature": false
   },
   "exclude": ["node_modules"],
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]

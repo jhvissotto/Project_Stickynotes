@@ -103,6 +103,7 @@ export default function StickyNote({ data }: Props) {
     
     // refs
     const ref = {
+        // @ts-ignore
         textarea: Rct.useRef<TextareaHTMLAttributes>(),
     }
 
@@ -162,13 +163,15 @@ export default function StickyNote({ data }: Props) {
 
     // render
     return (
+        // @ts-ignore
         <div css={styles.container}  className="relative" >
 
             {/* ========================== */}
             {/* ======== TEXTAREA ======== */}
             {/* ========================== */}
-            <textarea 
+            <textarea
                 ref={ref.textarea}
+                // @ts-ignore 
                 css={styles.textarea} 
                 className="absolute"
                 readOnly={ctrl.get.isReadOnly()}
@@ -181,6 +184,7 @@ export default function StickyNote({ data }: Props) {
             {/* ======== ICONS ======== */}
             {/* ======================= */}
             <div 
+                // @ts-ignore
                 css={styles.listIcons} 
                 className="flex column ai-center absolute right-min" 
             >
@@ -200,6 +204,7 @@ export default function StickyNote({ data }: Props) {
             {/* ======== DATETIME ======== */}
             {/* ========================== */}
             <div 
+                // @ts-ignore
                 css={styles.datetime} 
                 className="flex absolute bottom-min ai-center" 
                 title={content.datetime.en} 
