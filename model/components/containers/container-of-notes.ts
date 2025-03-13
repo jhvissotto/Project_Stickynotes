@@ -1,9 +1,9 @@
-import { computed, action } from 'easy-peasy'
+import { action } from 'easy-peasy'
 import moment from 'moment'
 import shortid from 'shortid'
 // ts
-import { Computed, Action } from 'easy-peasy'
-import { Store } from '../../store'
+import { Action } from 'easy-peasy'
+// import { Store } from '../../store'
 
 
 interface IistOfNotes {
